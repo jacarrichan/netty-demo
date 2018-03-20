@@ -1,0 +1,64 @@
+"worker-3-1@1490" prio=5 tid=0x15 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at test.netty.server.TcpServerHandler.channelRegistered(TcpServerHandler.java:14)
+	  at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:118)
+	  at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:104)
+	  at io.netty.channel.ChannelInboundHandlerAdapter.channelRegistered(ChannelInboundHandlerAdapter.java:42)
+	  at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:118)
+	  at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:104)
+	  at io.netty.channel.ChannelInboundHandlerAdapter.channelRegistered(ChannelInboundHandlerAdapter.java:42)
+	  at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:118)
+	  at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:104)
+	  at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:70)
+	  at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:118)
+	  at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:104)
+	  at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:846)
+	  at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:453)
+	  at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:370)
+	  at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:420)
+	  at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	  at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	  at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	  at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	  at java.lang.Thread.run(Thread.java:748)
+
+"boss-1-1@1467" prio=5 tid=0xd nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+	  at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(WindowsSelectorImpl.java:-1)
+	  at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+	  at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+	  at sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+	  at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+	  - locked <0x608> (a sun.nio.ch.WindowsSelectorImpl)
+	  - locked <0x609> (a java.util.Collections$UnmodifiableSet)
+	  - locked <0x60a> (a io.netty.channel.nio.SelectedSelectionKeySet)
+	  at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+	  at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+	  at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+	  at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	  at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	  at java.lang.Thread.run(Thread.java:748)
+
+"Finalizer@1542" daemon prio=8 tid=0x3 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	  at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	  at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler@1543" daemon prio=10 tid=0x2 nid=NA waiting
+  java.lang.Thread.State: WAITING
+	  at java.lang.Object.wait(Object.java:-1)
+	  at java.lang.Object.wait(Object.java:502)
+	  at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	  at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"DestroyJavaVM@1476" prio=5 tid=0x1a nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
+"Attach Listener@1540" daemon prio=5 tid=0x5 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher@1541" daemon prio=9 tid=0x4 nid=NA runnable
+  java.lang.Thread.State: RUNNABLE
+
